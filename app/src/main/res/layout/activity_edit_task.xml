@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".editTask">
+
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="TextView"
+    android:textAlignment="textStart"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/tvCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="TextView"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+<TextView
+    android:id="@+id/tvData"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="TextView"
+    android:textAlignment="textStart"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
+
+<TextView
+    android:id="@+id/tvOra"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="TextView"
+    android:textAlignment="textStart"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvData" />
+
+
+<TextView
+    android:id="@+id/tvPriority"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="TextView"
+    android:textAlignment="textStart"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvOra" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F7E9EC"
+        android:text="EDIT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+<Button
+    android:id="@+id/saveBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:text="SAVE"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/editBtn"
+    android:backgroundTint="#F7E9EC"/>
+
+    <EditText
+    android:id="@+id/tcTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Spinner
+    android:id="@+id/spinner_cat2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tcTitle" />
+
+<TextView
+    android:id="@+id/tcData"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:textSize="18sp"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinner_cat2" />
+
+<TextView
+    android:id="@+id/tcOra"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:textSize="18sp"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tcData" />
+
+<Spinner
+    android:id="@+id/spinner_prior"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tcOra" />
+
+<Button
+    android:id="@+id/button_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="130dp"
+    android:text="Inserisci Data"
+    android:visibility="gone"
+    app:layout_constraintStart_toEndOf="@+id/tcData"
+    app:layout_constraintTop_toTopOf="parent"
+    android:backgroundTint="#F7E9EC"/>
+
+<Button
+    android:id="@+id/hour_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Inserisci Ora"
+    android:visibility="gone"
+    app:layout_constraintStart_toEndOf="@+id/tcOra"
+    app:layout_constraintTop_toBottomOf="@+id/button_data"
+    android:backgroundTint="#F7E9EC"/>
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F7E9EC"
+        android:text="DONE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editBtn" />
+
+    <Button
+        android:id="@+id/onDoingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F7E9EC"
+        android:text="ON DOING"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/doneBtn" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Text View "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriority" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

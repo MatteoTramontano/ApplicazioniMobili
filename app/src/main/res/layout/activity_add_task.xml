@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:context=".add_task">
+
+        <Button
+            android:id="@+id/hour_button3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="93dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F7E9EC"
+            android:includeFontPadding="true"
+            android:text="HOUR"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_hour"
+            app:layout_constraintStart_toEndOf="@+id/textView_hour" />
+
+        <Button
+            android:id="@+id/hour_button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="93dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F7E9EC"
+            android:includeFontPadding="true"
+            android:text="HOUR"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_hour"
+            app:layout_constraintStart_toEndOf="@+id/textView_hour" />
+
+        <EditText
+            android:id="@+id/insert_task"
+            android:layout_width="234dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Task"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/insert_date"
+            android:layout_width="233dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:elegantTextHeight="true"
+            android:freezesText="false"
+            android:hint=""
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_cat" />
+
+        <RadioGroup
+            android:id="@+id/radioG"
+            android:layout_width="235dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_hour">
+
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/radio_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   PRIORITY" />
+
+        </RadioGroup>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <Button
+            android:id="@+id/button_data"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="93dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F7E9EC"
+            android:elegantTextHeight="true"
+            android:text="Date"
+            app:layout_constraintBottom_toBottomOf="@+id/insert_date"
+            app:layout_constraintStart_toEndOf="@+id/insert_date" />
+
+        <TextView
+            android:id="@+id/textView_hour"
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:elegantTextHeight="true"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/insert_date" />
+
+        <Button
+            android:id="@+id/hour_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="93dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F7E9EC"
+            android:elegantTextHeight="true"
+            android:text="HOUR"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_hour"
+            app:layout_constraintStart_toEndOf="@+id/textView_hour" />
+
+        <Spinner
+            android:id="@+id/spinner_cat"
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/insert_task" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="85dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:text="CATEGORY"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_cat"
+            app:layout_constraintStart_toEndOf="@+id/spinner_cat" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioG"
+            />
+
+        <TextView
+            android:id="@+id/notifiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="NOTIFY"
+            app:layout_constraintStart_toEndOf="@+id/switch1"
+            app:layout_constraintTop_toBottomOf="@+id/radioG" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
